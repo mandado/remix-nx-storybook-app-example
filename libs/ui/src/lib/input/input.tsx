@@ -9,18 +9,13 @@ type InputProps = Merge<
 type Ref = HTMLInputElement;
 
 export const Input = forwardRef<Ref, InputProps>((props, ref) => {
-  const { variant, size, className, ...restProps } = props;
-
-  console.log(
-    input({ class: className, variant, size })
-  )
-
+  const { variant, size, type, className, ...restProps } = props;
   return (
     <input
       {...restProps}
       ref={ref}
-      className={input({ variant, size })}
-      type="text"
+      className={input({ variant, size, class: className })}
+      type={type}
     />
   );
 })

@@ -1,10 +1,10 @@
-import { Button, Input } from '@ctapp/ui';
+import { Button, Checkbox, Input } from '@ctapp/ui';
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
       <h1>Welcome to Remix</h1>
       <Button size="small">asda</Button>
-      <Input variant="error" />
+      <Checkbox  />
       <div className="text-red-500">asd</div>
       <ul>
         <li>
